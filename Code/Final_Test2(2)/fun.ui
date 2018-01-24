@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Fun</class>
+ <widget class="QWidget" name="Fun">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>803</width>
+    <height>391</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>200</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>751</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;恭喜你找到了秘密窗口&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;在这里我会告诉你一些关于我的小秘密哦&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;你应该还不知道在相图中按H键可以显示或隐藏参考基线吧&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;你也该也不知道在相图中按ADWS和-+键可以移动和缩小相图吧&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;你应该还不知道在animate中按S和C可停止动画和继续动画吧&lt;/span&gt;&lt;/p&gt;&lt;p&gt;还有哦：三摆和双摆背景颜色不同，对于你来说哪一个更好看呢？欢迎邮件。&lt;/p&gt;&lt;p&gt;我们找到了几个近似周期解：&lt;/p&gt;&lt;p&gt;theta1=1.999; theta2=-1.00; theta3=0.9999; theta4=0.00;   M1=1.00; M2=3.00; L1=2.00; L2=1.00;&lt;/p&gt;&lt;p&gt;theta1=1.000; theta2=0.00; theta3=2.50;   theta4=0.000;  M1=1.00; M2=3.00; L1=2.00; L2=1.00; &lt;/p&gt;&lt;p&gt;theta1=3.000; theta2=10.00; theta3=-2.600; theta4=-15.00; M1=1.00; M2=3.00; L1=2.00; L2=1.00; &lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>60</y>
+     <width>111</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/images/chaos-theory-250.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>label_2</zorder>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Fun</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>580</x>
+     <y>306</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>583</x>
+     <y>394</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

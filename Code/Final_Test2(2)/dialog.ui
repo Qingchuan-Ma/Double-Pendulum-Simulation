@@ -1,0 +1,2501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>988</width>
+    <height>569</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Chaos</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QStackedWidget" name="MainWidget">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>42</y>
+     <width>966</width>
+     <height>518</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="currentIndex">
+    <number>6</number>
+   </property>
+   <widget class="QWidget" name="MainPage">
+    <property name="minimumSize">
+     <size>
+      <width>964</width>
+      <height>528</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>964</width>
+      <height>528</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+    </property>
+    <widget class="QPushButton" name="StartButton">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>52</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Start</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ContinueButton">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>280</y>
+       <width>150</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Load</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="SettingButton">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>160</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Setting</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Exit">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>394</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Exit</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="SubStart4">
+    <widget class="QCheckBox" name="checkBox_2">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>150</y>
+       <width>361</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Phase Diagram (θ1-ω1)</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_3">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>200</y>
+       <width>361</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Phase Diagram (θ2-ω2)</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_4">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>250</y>
+       <width>361</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Phase Diagram (θ1-θ2)</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_5">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>300</y>
+       <width>361</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Animate</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_8">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>420</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Return</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_30">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>10</y>
+       <width>281</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Double Pendulum </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_19">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>60</y>
+       <width>321</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 17pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Setting Kinds of Output</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_9">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>420</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Run</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="SubStart5"/>
+   <widget class="QWidget" name="Setting">
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>270</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 15pt &quot;Nueva Std&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Audio</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_3">
+     <property name="geometry">
+      <rect>
+       <x>-200</x>
+       <y>380</y>
+       <width>1251</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>250</y>
+       <width>981</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>420</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Return</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>70</y>
+       <width>971</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>90</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 15pt &quot;Nueva Std&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Playing Ways</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>140</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>By-Mouse</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>190</y>
+       <width>241</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>By-Keyboard</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QSlider" name="Audio">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>330</y>
+       <width>191</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="singleStep">
+      <number>7</number>
+     </property>
+     <property name="value">
+      <number>40</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Title">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>10</y>
+       <width>121</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Setting</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="SubStart1">
+    <widget class="QRadioButton" name="Double">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>170</y>
+       <width>261</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Double Pendulum</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="Triple">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>280</y>
+       <width>231</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Triple Pendulum</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>30</y>
+       <width>551</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Select the Number of the Pendulum</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="StartButton_2">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>420</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Next</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="StartButton_3">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>420</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Return</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="SubStart2">
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>420</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Return</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>420</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Next</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>60</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 17pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Setting Initial Value</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_28">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>10</y>
+       <width>291</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string> Double Pendulum </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>110</y>
+       <width>341</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/new/prefix1/images/double.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="number_9">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>401</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="decimals">
+      <number>1</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>500.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>200.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>411</x>
+       <y>340</y>
+       <width>74</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 10pt &quot;Symbol&quot;;
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>           L1</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="number_8">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>371</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="decimals">
+      <number>4</number>
+     </property>
+     <property name="minimum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>5.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>1.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>400</y>
+       <width>73</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 10pt &quot;Symbol&quot;;
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>   time</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>111</y>
+       <width>166</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 14pt &quot;Minion Pro SmBd&quot;;</string>
+     </property>
+     <property name="text">
+      <string>     Initial Value     </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>411</x>
+       <y>370</y>
+       <width>74</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 10pt &quot;Symbol&quot;;
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>           L2</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_9">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>401</y>
+       <width>161</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>500</number>
+     </property>
+     <property name="value">
+      <number>200</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>160</y>
+       <width>161</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="acceptDrops">
+      <bool>false</bool>
+     </property>
+     <property name="minimum">
+      <number>-31415</number>
+     </property>
+     <property name="maximum">
+      <number>31415</number>
+     </property>
+     <property name="value">
+      <number>20000</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="invertedAppearance">
+      <bool>false</bool>
+     </property>
+     <property name="invertedControls">
+      <bool>false</bool>
+     </property>
+     <property name="tickPosition">
+      <enum>QSlider::NoTicks</enum>
+     </property>
+     <property name="tickInterval">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_18">
+     <property name="geometry">
+      <rect>
+       <x>703</x>
+       <y>111</y>
+       <width>174</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 14pt &quot;Minion Pro SmBd&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_3">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>220</y>
+       <width>161</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>-31415</number>
+     </property>
+     <property name="maximum">
+      <number>31415</number>
+     </property>
+     <property name="value">
+      <number>10000</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_4">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>250</y>
+       <width>161</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>-500</number>
+     </property>
+     <property name="maximum">
+      <number>500</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="number_6">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>311</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="decimals">
+      <number>4</number>
+     </property>
+     <property name="minimum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>10.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>1.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="number_5">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>281</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="decimals">
+      <number>4</number>
+     </property>
+     <property name="minimum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>10.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>1.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_7">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>340</y>
+       <width>161</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>5</number>
+     </property>
+     <property name="pageStep">
+      <number>2</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_5">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>280</y>
+       <width>161</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>10</number>
+     </property>
+     <property name="pageStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_6">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>310</y>
+       <width>161</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>10</number>
+     </property>
+     <property name="pageStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_8">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>370</y>
+       <width>161</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>5</number>
+     </property>
+     <property name="pageStep">
+      <number>1</number>
+     </property>
+     <property name="sliderPosition">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="number_1">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>160</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>IBeamCursor</cursorShape>
+     </property>
+     <property name="acceptDrops">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="keyboardTracking">
+      <bool>true</bool>
+     </property>
+     <property name="prefix">
+      <string/>
+     </property>
+     <property name="suffix">
+      <string/>
+     </property>
+     <property name="decimals">
+      <number>4</number>
+     </property>
+     <property name="minimum">
+      <double>-3.141500000000000</double>
+     </property>
+     <property name="maximum">
+      <double>3.141500000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.000020000000000</double>
+     </property>
+     <property name="value">
+      <double>2.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>411</x>
+       <y>111</y>
+       <width>112</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 14pt &quot;Minion Pro SmBd&quot;;</string>
+     </property>
+     <property name="text">
+      <string>   Parameter</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="number_2">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>190</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="decimals">
+      <number>4</number>
+     </property>
+     <property name="minimum">
+      <double>-10.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>10.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.020000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>411</x>
+       <y>160</y>
+       <width>74</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 10pt &quot;Symbol&quot;;
+font: 75 10pt &quot;Symbol&quot;;</string>
+     </property>
+     <property name="text">
+      <string>             q1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>411</x>
+       <y>220</y>
+       <width>74</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 10pt &quot;Symbol&quot;;</string>
+     </property>
+     <property name="text">
+      <string>             q2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>411</x>
+       <y>189</y>
+       <width>75</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 12pt &quot;Symbol&quot;;</string>
+     </property>
+     <property name="text">
+      <string>          w1</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="number_3">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>220</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="decimals">
+      <number>4</number>
+     </property>
+     <property name="minimum">
+      <double>-3.141500000000000</double>
+     </property>
+     <property name="maximum">
+      <double>3.141500000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.200000000000000</double>
+     </property>
+     <property name="value">
+      <double>1.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>411</x>
+       <y>280</y>
+       <width>77</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 10pt &quot;Symbol&quot;;
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>          M1</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="number_4">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>250</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="decimals">
+      <number>4</number>
+     </property>
+     <property name="minimum">
+      <double>-10.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>10.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.020000000000000</double>
+     </property>
+     <property name="value">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="number_7">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>341</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="decimals">
+      <number>4</number>
+     </property>
+     <property name="minimum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>5.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>1.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>411</x>
+       <y>249</y>
+       <width>75</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 12pt &quot;Symbol&quot;;</string>
+     </property>
+     <property name="text">
+      <string>          w2</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_2">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>190</y>
+       <width>161</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>-500</number>
+     </property>
+     <property name="maximum">
+      <number>500</number>
+     </property>
+     <property name="pageStep">
+      <number>10</number>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="sliderPosition">
+      <number>0</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>411</x>
+       <y>310</y>
+       <width>77</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 10pt &quot;Symbol&quot;;
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>          M2</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="SubStart3">
+    <widget class="QLabel" name="label_27">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>10</y>
+       <width>291</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Triple Pendulum</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_29">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>60</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 17pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Setting Initial Value</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>420</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Return</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_7">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>420</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Next</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_20">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>401</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/new/prefix1/images/triple.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="number3_11">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>350</y>
+       <width>70</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <double>500.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>10.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>50.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QSlider" name="verticalSlider">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>180</y>
+       <width>22</width>
+       <height>160</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>500</number>
+     </property>
+     <property name="singleStep">
+      <number>10</number>
+     </property>
+     <property name="value">
+      <number>50</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>120</y>
+       <width>371</width>
+       <height>295</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout" columnstretch="3,4,0">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_23">
+        <property name="styleSheet">
+         <string notr="true">font: 75 10pt &quot;Symbol&quot;;</string>
+        </property>
+        <property name="text">
+         <string>             q1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSlider" name="horizontalSlider_10">
+        <property name="minimum">
+         <number>-31415</number>
+        </property>
+        <property name="maximum">
+         <number>31415</number>
+        </property>
+        <property name="value">
+         <number>1000</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QDoubleSpinBox" name="number3_1">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+        <property name="minimum">
+         <double>-3.141500000000000</double>
+        </property>
+        <property name="maximum">
+         <double>3.141500000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.100000000000000</double>
+        </property>
+        <property name="value">
+         <double>0.100000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_24">
+        <property name="styleSheet">
+         <string notr="true">font: 75 12pt &quot;Symbol&quot;;</string>
+        </property>
+        <property name="text">
+         <string>          w1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSlider" name="horizontalSlider_11">
+        <property name="minimum">
+         <number>-500</number>
+        </property>
+        <property name="maximum">
+         <number>500</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QDoubleSpinBox" name="number3_2">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+        <property name="minimum">
+         <double>-10.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>10.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.200000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_25">
+        <property name="styleSheet">
+         <string notr="true">font: 75 10pt &quot;Symbol&quot;;</string>
+        </property>
+        <property name="text">
+         <string>             q2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QSlider" name="horizontalSlider_12">
+        <property name="minimum">
+         <number>-31415</number>
+        </property>
+        <property name="maximum">
+         <number>31415</number>
+        </property>
+        <property name="singleStep">
+         <number>1</number>
+        </property>
+        <property name="value">
+         <number>1000</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QDoubleSpinBox" name="number3_3">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+        <property name="minimum">
+         <double>-3.141500000000000</double>
+        </property>
+        <property name="maximum">
+         <double>3.141500000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.100000000000000</double>
+        </property>
+        <property name="value">
+         <double>0.100000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_26">
+        <property name="styleSheet">
+         <string notr="true">font: 75 12pt &quot;Symbol&quot;;</string>
+        </property>
+        <property name="text">
+         <string>          w2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QSlider" name="horizontalSlider_13">
+        <property name="minimum">
+         <number>-500</number>
+        </property>
+        <property name="maximum">
+         <number>500</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QDoubleSpinBox" name="number3_4">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+        <property name="minimum">
+         <double>-10.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>10.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.200000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_31">
+        <property name="styleSheet">
+         <string notr="true">font: 75 10pt &quot;Symbol&quot;;</string>
+        </property>
+        <property name="text">
+         <string>             q3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QSlider" name="horizontalSlider_14">
+        <property name="minimum">
+         <number>-31415</number>
+        </property>
+        <property name="maximum">
+         <number>31415</number>
+        </property>
+        <property name="value">
+         <number>1000</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QDoubleSpinBox" name="number3_5">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+        <property name="minimum">
+         <double>-3.141500000000000</double>
+        </property>
+        <property name="maximum">
+         <double>3.141500000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.100000000000000</double>
+        </property>
+        <property name="value">
+         <double>0.100000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_32">
+        <property name="styleSheet">
+         <string notr="true">font: 75 12pt &quot;Symbol&quot;;</string>
+        </property>
+        <property name="text">
+         <string>          w3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QSlider" name="horizontalSlider_15">
+        <property name="minimum">
+         <number>-500</number>
+        </property>
+        <property name="maximum">
+         <number>500</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QDoubleSpinBox" name="number3_6">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+        <property name="minimum">
+         <double>-10.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>10.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.200000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_33">
+        <property name="styleSheet">
+         <string notr="true">font: 75 10pt &quot;Symbol&quot;;
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+        </property>
+        <property name="text">
+         <string>      M1/M3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QSlider" name="horizontalSlider_16">
+        <property name="minimum">
+         <number>2</number>
+        </property>
+        <property name="maximum">
+         <number>50</number>
+        </property>
+        <property name="pageStep">
+         <number>1</number>
+        </property>
+        <property name="value">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QDoubleSpinBox" name="number3_7">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+        <property name="minimum">
+         <double>0.200000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>5.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.200000000000000</double>
+        </property>
+        <property name="value">
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_34">
+        <property name="styleSheet">
+         <string notr="true">font: 75 10pt &quot;Symbol&quot;;
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+        </property>
+        <property name="text">
+         <string>      M2/M3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QSlider" name="horizontalSlider_17">
+        <property name="minimum">
+         <number>2</number>
+        </property>
+        <property name="maximum">
+         <number>50</number>
+        </property>
+        <property name="pageStep">
+         <number>1</number>
+        </property>
+        <property name="value">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <widget class="QDoubleSpinBox" name="number3_8">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+        <property name="minimum">
+         <double>0.200000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>5.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.200000000000000</double>
+        </property>
+        <property name="value">
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_35">
+        <property name="styleSheet">
+         <string notr="true">font: 75 10pt &quot;Symbol&quot;;
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+        </property>
+        <property name="text">
+         <string>       L1/L3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QSlider" name="horizontalSlider_18">
+        <property name="minimum">
+         <number>2</number>
+        </property>
+        <property name="maximum">
+         <number>50</number>
+        </property>
+        <property name="pageStep">
+         <number>1</number>
+        </property>
+        <property name="value">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="2">
+       <widget class="QDoubleSpinBox" name="number3_9">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+        <property name="minimum">
+         <double>0.200000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>5.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.200000000000000</double>
+        </property>
+        <property name="value">
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="label_36">
+        <property name="styleSheet">
+         <string notr="true">font: 75 10pt &quot;Symbol&quot;;
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+        </property>
+        <property name="text">
+         <string>       L2/L3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QSlider" name="horizontalSlider_19">
+        <property name="minimum">
+         <number>2</number>
+        </property>
+        <property name="maximum">
+         <number>50</number>
+        </property>
+        <property name="pageStep">
+         <number>1</number>
+        </property>
+        <property name="value">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="2">
+       <widget class="QDoubleSpinBox" name="number3_10">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+        <property name="minimum">
+         <double>0.200000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>5.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.200000000000000</double>
+        </property>
+        <property name="value">
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="label_37">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>140</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 10pt &quot;Symbol&quot;;
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>   time</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="SubStart6">
+    <widget class="QPushButton" name="pushButton_10">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>420</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Return</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_11">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>420</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Run</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_38">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>10</y>
+       <width>281</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Triple Pendulum </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>50</y>
+       <width>321</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 17pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Setting Kinds of Output</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_6">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>330</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Animate</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_7">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>270</y>
+       <width>311</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Phase Diagram(θ3-ω3)</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_8">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>210</y>
+       <width>241</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Phase Diagram(θ2-ω2)</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_9">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>150</y>
+       <width>261</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Phase Diagram(θ1-ω1)</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="SubStart7"/>
+   <widget class="QWidget" name="Load1">
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>30</y>
+       <width>551</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Select the Number of the Pendulum</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="Double_2">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>170</y>
+       <width>261</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Double Pendulum</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="Triple_2">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>280</y>
+       <width>231</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Triple Pendulum</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="StartButton_4">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>420</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Next</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="StartButton_5">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>420</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Return</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Load2">
+    <widget class="QLabel" name="label_40">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>10</y>
+       <width>281</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Double Pendulum </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_13">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>420</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Return</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_10">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>320</y>
+       <width>361</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Animate</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_12">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>140</y>
+       <width>361</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Phase Diagram (θ1-ω1)</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_12">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>420</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Run</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_39">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>60</y>
+       <width>321</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 17pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Setting Kinds of Output</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_11">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>200</y>
+       <width>361</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Phase Diagram (θ2-ω2)</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_13">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>260</y>
+       <width>361</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Phase Diagram (θ1-θ2)</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Load3">
+    <widget class="QPushButton" name="pushButton_15">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>420</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Run</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_14">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>420</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Return</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_15">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>150</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Phase Diagram(θ1-ω1)</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_41">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>10</y>
+       <width>281</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 20pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Triple Pendulum </string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_16">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>210</y>
+       <width>241</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Phase Diagram(θ2-ω2)</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_17">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>270</y>
+       <width>331</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Phase Diagram(θ3-ω3)</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_42">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>50</y>
+       <width>321</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 italic 17pt &quot;Yu Mincho Demibold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Setting Kinds of Output</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_14">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>330</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 11pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Animate</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>ContinueButton</tabstop>
+  <tabstop>SettingButton</tabstop>
+  <tabstop>Exit</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>radioButton</tabstop>
+  <tabstop>radioButton_2</tabstop>
+  <tabstop>Audio</tabstop>
+  <tabstop>Double</tabstop>
+  <tabstop>Triple</tabstop>
+  <tabstop>StartButton_2</tabstop>
+  <tabstop>StartButton_3</tabstop>
+  <tabstop>horizontalSlider_10</tabstop>
+  <tabstop>number3_1</tabstop>
+  <tabstop>pushButton_6</tabstop>
+  <tabstop>pushButton_7</tabstop>
+  <tabstop>checkBox_2</tabstop>
+  <tabstop>checkBox_3</tabstop>
+  <tabstop>checkBox_4</tabstop>
+  <tabstop>checkBox_5</tabstop>
+  <tabstop>pushButton_8</tabstop>
+  <tabstop>pushButton_9</tabstop>
+  <tabstop>verticalSlider</tabstop>
+  <tabstop>number3_11</tabstop>
+  <tabstop>horizontalSlider_9</tabstop>
+  <tabstop>horizontalSlider</tabstop>
+  <tabstop>horizontalSlider_3</tabstop>
+  <tabstop>horizontalSlider_4</tabstop>
+  <tabstop>horizontalSlider_2</tabstop>
+  <tabstop>StartButton</tabstop>
+  <tabstop>horizontalSlider_7</tabstop>
+  <tabstop>horizontalSlider_5</tabstop>
+  <tabstop>horizontalSlider_6</tabstop>
+  <tabstop>horizontalSlider_8</tabstop>
+  <tabstop>number_1</tabstop>
+  <tabstop>number_2</tabstop>
+  <tabstop>number_3</tabstop>
+  <tabstop>number_4</tabstop>
+  <tabstop>number_5</tabstop>
+  <tabstop>number_6</tabstop>
+  <tabstop>number_7</tabstop>
+  <tabstop>number_8</tabstop>
+  <tabstop>number_9</tabstop>
+  <tabstop>pushButton_4</tabstop>
+  <tabstop>pushButton_5</tabstop>
+  <tabstop>horizontalSlider_11</tabstop>
+  <tabstop>number3_2</tabstop>
+  <tabstop>horizontalSlider_12</tabstop>
+  <tabstop>number3_3</tabstop>
+  <tabstop>horizontalSlider_13</tabstop>
+  <tabstop>number3_4</tabstop>
+  <tabstop>horizontalSlider_14</tabstop>
+  <tabstop>number3_5</tabstop>
+  <tabstop>horizontalSlider_15</tabstop>
+  <tabstop>number3_6</tabstop>
+  <tabstop>horizontalSlider_16</tabstop>
+  <tabstop>number3_7</tabstop>
+  <tabstop>horizontalSlider_17</tabstop>
+  <tabstop>number3_8</tabstop>
+  <tabstop>horizontalSlider_18</tabstop>
+  <tabstop>number3_9</tabstop>
+  <tabstop>horizontalSlider_19</tabstop>
+  <tabstop>number3_10</tabstop>
+  <tabstop>pushButton_10</tabstop>
+  <tabstop>pushButton_11</tabstop>
+  <tabstop>checkBox_6</tabstop>
+  <tabstop>checkBox_7</tabstop>
+  <tabstop>checkBox_8</tabstop>
+  <tabstop>checkBox_9</tabstop>
+  <tabstop>Double_2</tabstop>
+  <tabstop>Triple_2</tabstop>
+  <tabstop>StartButton_4</tabstop>
+  <tabstop>StartButton_5</tabstop>
+  <tabstop>pushButton_13</tabstop>
+  <tabstop>checkBox_10</tabstop>
+  <tabstop>checkBox_12</tabstop>
+  <tabstop>pushButton_12</tabstop>
+  <tabstop>checkBox_11</tabstop>
+  <tabstop>checkBox_13</tabstop>
+  <tabstop>pushButton_15</tabstop>
+  <tabstop>pushButton_14</tabstop>
+  <tabstop>checkBox_15</tabstop>
+  <tabstop>checkBox_16</tabstop>
+  <tabstop>checkBox_17</tabstop>
+  <tabstop>checkBox_14</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

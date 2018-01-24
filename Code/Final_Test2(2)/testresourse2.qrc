@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>images/lorenz_attractor_by_projecttina.png</file>
+        <file>images/double.png</file>
+        <file>images/min.png</file>
+        <file>images/triple.png</file>
+        <file>images/close.png</file>
+        <file>images/Others.png</file>
+        <file>images/Others2.png</file>
+        <file>images/close2.png</file>
+        <file>images/min2.png</file>
+        <file>images/chaos-theory-250.png</file>
+        <file>images/help.png</file>
+        <file>images/save.png</file>
+        <file>images/about.png</file>
+        <file>images/Completed.bmp</file>
+        <file>images/Loading.bmp</file>
+    </qresource>
+</RCC>
